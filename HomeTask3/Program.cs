@@ -1,6 +1,6 @@
 ﻿//Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
 
-/* Console.Write("Введите 5-ти значное число полиндром:");
+Console.Write("Введите 5-ти значное число полиндром:");
 int number = int.Parse(Console.ReadLine());
 
 if (number / 10000 == number % 10 && (number % 10000)/1000 == (number % 100)/10){
@@ -10,13 +10,13 @@ if (number / 10000 == number % 10 && (number % 10000)/1000 == (number % 100)/10)
 else
 {
     Console.WriteLine("Число НЕ является полиндромом");
-} */
+}
 
 
 //Напишите программу, которая принимает на вход 
 //координаты двух точек и находит расстояние между ними в 3D пространстве.
 
-/* Console.WriteLine("Ведите координаты первой точки в формате x, + enter y, + enter z + enter :");
+Console.WriteLine("Ведите координаты первой точки в формате x, + enter y, + enter z + enter :");
 int[] point1 = new int[3];
 for (int i = 0; i < 3 ; i++){
     point1[i] = int.Parse(Console.ReadLine());
@@ -34,7 +34,7 @@ double distance = Math.Round(Math.Sqrt(Math.Pow(x, 2)+Math.Pow(y,2)+Math.Pow(z,2
 System.Console.WriteLine(distance);
 
 //A (3,6,8); B (2,1,-7), -> 15.84
-//A (7,-5, 0); B (1,-1,9) -> 11.53 */
+//A (7,-5, 0); B (1,-1,9) -> 11.53
 
 
 
