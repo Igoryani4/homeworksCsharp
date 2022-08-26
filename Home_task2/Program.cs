@@ -25,12 +25,14 @@ else
 //Напишите программу, которая принимает на вход цифру, 
 //обозначающую день недели, и проверяет, является ли этот день выходным.
 
-string number3 = Console.ReadLine();
+int number3 = int.Parse (Console.ReadLine());
 
-if (number3 == 6 || 7){
+if (number3 == 6 ){
     System.Console.WriteLine("Да");
 }
-
+if (number3 == 7 ){
+    System.Console.WriteLine("Да");
+}
 else
 {
     System.Console.WriteLine("Нет");
