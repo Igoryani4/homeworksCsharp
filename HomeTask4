@@ -1,0 +1,40 @@
+//Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.
+
+void exponent (int x, int y ) => Console.WriteLine($"Число {x} в степени {y} равно {Math.Pow(x, y)}");
+
+exponent(3,5);
+
+//3, 5 -> 243 (3⁵)
+
+//2, 4 -> 16
+
+
+// Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
+
+Console.WriteLine("Введите число :");
+int number = int.Parse(Console.ReadLine());
+int sum = 0;
+
+while (number != 0){
+    sum += number % 10;
+    number /= 10;
+
+}
+System.Console.WriteLine(sum);
+
+
+
+//Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
+System.Console.WriteLine("Введите число, обьем  массива: ");
+int num = int.Parse(Console.ReadLine());
+int[] array = new int[num];
+for (int i = 0; i < num ; i++){
+    System.Console.WriteLine("Введите число массива и нажмите Enter");
+    array[i] = int.Parse(Console.ReadLine());
+
+}
+System.Console.WriteLine("[{0}]", string.Join(", ", array));
+
+//1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
+
+// 6, 1, 33 -> [6, 1, 33]
