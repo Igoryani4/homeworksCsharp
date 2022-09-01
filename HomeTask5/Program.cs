@@ -1,7 +1,7 @@
 ﻿//Задайте массив заполненный случайными положительными трёхзначными числами. 
 //Напишите программу, которая покажет количество чётных чисел в массиве.
 
-/* int [] ArrayThreeDigit (int size){
+int [] ArrayThreeDigit (int size){
     
     int[] array = new int [size];
     for (int i = 0; i < array.Length; i ++){
@@ -28,14 +28,14 @@ int length = int.Parse(Console.ReadLine());
 int[] array = ArrayThreeDigit(length);
 
 Console.WriteLine($"[{string.Join(", ", array)}]");
-Console.WriteLine(FindEven(array)); */
+Console.WriteLine(FindEven(array));
 
 
 
 // Задайте одномерный массив, заполненный случайными числами. 
 //Найдите сумму элементов, стоящих на нечётных позициях.
 
-/* int [] ArrayRand (int size){
+int [] ArrayRand (int size){
     
     int[] array = new int [size];
     for (int i = 0; i < array.Length; i ++){
@@ -57,12 +57,12 @@ int FindSumOdd (int[] array){
 
 
 Console.WriteLine("Введите значение длины массива");
-int length = int.Parse(Console.ReadLine());
+int length1 = int.Parse(Console.ReadLine());
 
-int[] array = ArrayRand (length);
+int[] array1 = ArrayRand (length1);
 
-Console.WriteLine($"[{string.Join(", ", array)}]");
-Console.WriteLine(FindSumOdd(array)); */
+Console.WriteLine($"[{string.Join(", ", array1)}]");
+Console.WriteLine(FindSumOdd(array1));
 
 
 // Задайте массив вещественных чисел. 
@@ -96,9 +96,9 @@ int FindDiff (int[] array)
 
 
 Console.WriteLine("Введите значение длины массива");
-int length = int.Parse(Console.ReadLine());
+int length2 = int.Parse(Console.ReadLine());
 
-int[] array = ArrayNumber (length);
+int[] array2 = ArrayNumber (length2);
 
-Console.WriteLine($"[{string.Join(", ", array)}]");
-Console.WriteLine(FindDiff(array));
+Console.WriteLine($"[{string.Join(", ", array2)}]");
+Console.WriteLine(FindDiff(array2));
