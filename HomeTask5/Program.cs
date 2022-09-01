@@ -35,7 +35,7 @@ Console.WriteLine(FindEven(array)); */
 // Задайте одномерный массив, заполненный случайными числами. 
 //Найдите сумму элементов, стоящих на нечётных позициях.
 
-int [] ArrayRand (int size){
+/* int [] ArrayRand (int size){
     
     int[] array = new int [size];
     for (int i = 0; i < array.Length; i ++){
@@ -62,4 +62,43 @@ int length = int.Parse(Console.ReadLine());
 int[] array = ArrayRand (length);
 
 Console.WriteLine($"[{string.Join(", ", array)}]");
-Console.WriteLine(FindSumOdd(array));
+Console.WriteLine(FindSumOdd(array)); */
+
+
+// Задайте массив вещественных чисел. 
+//Найдите разницу между максимальным и минимальным элементов массива.
+
+int [] ArrayNumber (int size){
+    
+    int[] array = new int [size];
+    for (int i = 0; i < array.Length; i ++){
+        array[i] = new Random().Next(-999 , 999);
+    }
+    return array;
+}
+
+int FindDiff (int[] array)
+{
+    int Min = 10^9;
+    int Max = -10^9;
+    
+    for( int i= 0; i < array.Length; i ++){
+        if (array[i] < Min){
+            Min = array[i];
+        }
+        if (array[i] > Max){
+            Max = array[i];
+        }
+    }
+    int Difference = Max - Min;
+    return Difference;
+} 
+
+
+Console.WriteLine("Введите значение длины массива");
+int length = int.Parse(Console.ReadLine());
+
+int[] array = ArrayNumber (length);
+
+Console.WriteLine($"[{string.Join(", ", array)}]");
+Console.WriteLine(FindDiff(array));
