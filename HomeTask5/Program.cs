@@ -28,6 +28,7 @@ int length = int.Parse(Console.ReadLine());
 int[] array = ArrayThreeDigit(length);
 
 Console.WriteLine($"[{string.Join(", ", array)}]");
+Console.WriteLine("количество чётных чисел в массиве:");
 Console.WriteLine(FindEven(array));
 
 
@@ -62,6 +63,7 @@ int length1 = int.Parse(Console.ReadLine());
 int[] array1 = ArrayRand (length1);
 
 Console.WriteLine($"[{string.Join(", ", array1)}]");
+Console.WriteLine("сумма элементов, стоящих на нечётных позициях:");
 Console.WriteLine(FindSumOdd(array1));
 
 
@@ -101,4 +103,5 @@ int length2 = int.Parse(Console.ReadLine());
 int[] array2 = ArrayNumber (length2);
 
 Console.WriteLine($"[{string.Join(", ", array2)}]");
+Console.WriteLine("разница между максимальным и минимальным элементов массива:");
 Console.WriteLine(FindDiff(array2));
